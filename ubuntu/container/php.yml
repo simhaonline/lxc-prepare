@@ -1,0 +1,24 @@
+#cloud-config
+__defs:
+  php_packages: &php_packages
+    - composer
+    - php
+    - php-apcu
+    - php-cache-lite
+    - php-cgi
+    - php-cli
+    - php-curl
+    - php-fpm
+    - php-gd
+    - php-imagick
+    - php-imap
+    - php-mbstring
+    - php-mdb2
+    - php-mdb2-driver-pgsql
+    - php-memcache
+    - php-memcached
+    - php-mysql
+    - php-sqlite3
+    - php-xdebug
+    - php-zip
+    - sqlite3

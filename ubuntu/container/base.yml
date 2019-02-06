@@ -1,0 +1,44 @@
+#cloud-config
+__defs:
+  base_packages: &base_packages
+    - aptitude
+    - base-passwd
+    - bsdutils
+    - gzip
+    - iproute2
+    - iputils-ping
+    - locales
+    - mc
+    - net-tools
+    - netbase
+    - procps
+  base_runcmd: &base_runcmd
+    - 'useradd -m -p $(hostname) $(hostname)'
+  php_packages: &php_packages
+    - composer
+    - php
+    - php-apcu
+    - php-cache-lite
+    - php-cgi
+    - php-cli
+    - php-curl
+    - php-fpm
+    - php-gd
+    - php-imagick
+    - php-imap
+    - php-mbstring
+    - php-mdb2
+    - php-mdb2-driver-pgsql
+    - php-memcache
+    - php-memcached
+    - php-mysql
+    - php-sqlite3
+    - php-xdebug
+    - php-zip
+    - sqlite3
+
+package_upgrade: true
+timezone: Europe/Budapest
+locale: hu_HU.UTF-8
+packages:
+  <<: *base_packages
