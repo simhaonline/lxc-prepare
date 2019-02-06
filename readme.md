@@ -1,4 +1,4 @@
-# LXD Inits
+# LXD/LXC Prepare
 
 The tool aims to help building clean local LXC container with automation of necessary initialization steps like
 preconfigured package installation and so on. This is much more as a skeleton of a workflow rather than a 
