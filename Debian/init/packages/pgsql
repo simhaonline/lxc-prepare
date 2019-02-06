@@ -1,0 +1,10 @@
+pgbouncer
+pgcli
+pgdg-keyring
+postgresql
+postgresql-11
+postgresql-11-cron
+postgresql-11-mysql-fdw
+postgresql-client-11
+postgresql-client-common
+postgresql-common
